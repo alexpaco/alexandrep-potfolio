@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar color='navbleu'>
+    <ion-title text-center>Présentation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content scroll="false" class="body">
+	<h3 text-center><span class="souligne">Biographie professionnel</span> :</h3>
+	<p>Menuisier de métier, je décide de me reconvertir dans le milieu du web en tant que développeur web/ logiciel</p>
+	<div class="toutParcours">
+		<div class="entreprises">
+			<h3 text-center><span class="souligne">Parcours professionnel</span> :</h3>
+			<p text-center class="marge">Nov 2016/ Maintenant</p>
+			<p text-center class="marge">Apprenant développeur web</p>
+			<p text-center class="marge">ACS OnlineFormaPro (71100)</p>
+			<hr>
+			<p text-center class="marge">Août 2015/ Juin 2016</p>
+			<p text-center class="marge">Employé de production</p>
+			<p text-center class="marge">Itron (71000)</p>
+			<hr>
+			<p text-center class="marge">Mai 2015/ Juin 2015</p>
+			<p text-center class="marge">OS Ébénisterie</p>
+			<p text-center class="marge">Simire (71000)</p>
+			<hr>
+			<p text-center class="marge">Nov 2014/ Avril 2015</p>
+			<p text-center class="marge">Employé de production</p>
+			<p text-center class="marge">Itron (71000)</p>
+			<hr>
+			<p text-center class="marge">Juin 2013/ Août 2014</p>
+			<p text-center class="marge">OS Ébénisterie</p>
+			<p text-center class="marge">Simire (71000)</p>
+			<hr>
+			<p text-center class="marge">Sept 2012/ Déc 2012</p>
+			<p text-center class="marge">Menuisier</p>
+			<p text-center class="marge">St Batrh Menuiserie (97133)</p>
+			<hr>
+			<p text-center class="marge">Mars 2012/ Juin 2012</p>
+			<p text-center class="marge">OS Ébénisterie</p>
+			<p text-center class="marge">BIER (71700)</p>
+		</div>
+		<div class="ecoleLangue">
+			<div class="ecole">
+				<h3 text-center><span class="souligne">Parcours scolaire</span> :</h3>
+				<p text-center class="marge">2009/2011</p>
+				<p text-center class="marge">BAC PRO Menuisier</p>
+				<p text-center class="marge">Cormaranche en bugey (01)</p>
+				<hr>
+				<p text-center class="marge">2007/2009</p>
+				<p text-center class="marge">CAP Menuisier</p>
+				<p text-center class="marge">Cormaranche en bugey (01)</p>
+			</div>
+			<div class="langages">
+				<h3 text-center><span class="souligne">Langages</span> :</h3>
+				<div class="langues">
+					<p *ngFor="let langage of langages">
+						<img [src]="langage.image">
+					</p>
+				</div>
+			</div>
+			<div class="loisir">
+				<h3 text-center><span class="souligne">Loisir</span> :</h3>
+				<p text-center class="marge">Handball</p>
+				<p text-center class="marge">Guitare</p>
+				<p text-center class="marge">Voyage</p>
+				<p text-center class="marge">Jeux vidéo</p>
+			</div>
+		</div>
+	</div>
+	
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color='navbleu'>
+    <ion-title text-center>Mon Portfolio</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content scrool="false">
+
+<div class="accueil">
+    <a href="" class="presentation" [navPush]="presentation"><ion-icon name="person"></ion-icon><p>PRESENTATION</p></a>
+    <a href="" class="projets" [navPush]="projets"><ion-icon name="folder-open"></ion-icon><p>PROJETS</p></a>
+  </div>
+  <div class="accueil">
+    <a href="" class="contact" [navPush]="contact"><ion-icon name="mail"></ion-icon><p>CONTACT</p></a>
+    <a href="http://pacoret.chalon.codeur.online/portfolio/cv.pdf" target="_blank" class="cv"><ion-icon name="download"></ion-icon><p style="width: 150px;" text-center>MON CV</p></a>
+  </div>
+  
+</ion-content>

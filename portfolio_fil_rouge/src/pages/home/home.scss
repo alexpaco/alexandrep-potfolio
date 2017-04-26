@@ -1,0 +1,29 @@
+page-home{
+	a{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		
+	}
+	.accueil{
+		display: flex;
+		height: 50%;
+	}
+	.presentation{
+		background-color: #F9ED69;
+	}
+	.projets{
+		background-color: #F08A5D;
+	}
+	.contact{
+		background-color: #B83B5E; 
+	}
+	.cv{
+		background-color: #6A2C70;
+	}
+}	

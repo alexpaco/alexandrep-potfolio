@@ -1,0 +1,74 @@
+page-presentation{
+	.body{
+		background-color: #F9ED69;
+	}
+	img{
+		width: 50px;
+		margin: 2px;
+	}
+	.langages{
+		margin: 5px;
+		background-color: white;
+		border: 1px solid black;
+	}
+	.langues{
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	.marge{
+		margin-bottom: -10px;
+	}
+	hr {
+		display: block;
+		clear: both;
+		height: 0;
+		margin: 15px 0 20px;
+		padding: 0;
+		border: 0;
+		font-family: arial;
+		text-align: center;
+		font-size: 15px;
+		line-height: 1;
+	}
+	hr:after {
+		content: "\276e \276e \276e \276e \276e \276F \276F \276F \276F \276F ";
+		color: #B83B5E;
+	}
+	.souligne{
+		text-decoration: underline;
+	}
+	.toutParcours{
+		display: flex;
+	}
+	.ecoleLangue{
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+	.ecole{
+		margin: 3px;
+		border: 1px solid black;
+		background-color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-bottom: 20px;
+	}
+	.entreprises{
+		flex: 1.5;
+		margin: 3px;
+		border: 1px solid black;
+		background-color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-bottom: 20px;
+	}
+	.loisir{
+		margin: 3px;
+		border: 1px solid black;
+		background-color: white;
+		padding-left: 3px;
+		padding-right: 3px;
+		padding-bottom: 20px;
+	}
+}

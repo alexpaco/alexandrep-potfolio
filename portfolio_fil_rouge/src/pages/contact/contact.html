@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color='navbleu'>
+    <ion-title text-center>Me contacter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class='padding body'>
+	<form #form="ngForm" (ngSubmit)="logForm(form)">
+			<ion-item>
+				<ion-label stacked>Votre nom</ion-label>
+				<ion-input type="text" [(ngModel)]="todo.nom" required name="nom"></ion-input>
+			</ion-item>	
+			<ion-item>
+				<ion-label stacked>Votre email</ion-label>
+				<ion-input type="text" [(ngModel)]="todo.mail" required name="mail"></ion-input>		
+			</ion-item>
+			<ion-item>
+				<ion-label stacked>Sujet</ion-label>
+				<ion-input type="text" [(ngModel)]="todo.sujet" required name="sujet"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label stacked>Votre message</ion-label>
+				<ion-textarea type="text" [(ngModel)]="todo.message" required name="message"></ion-textarea>
+			</ion-item>
+			<input ion-button block type="submit" value="Soumettre" color="navbleu">
+	</form>
+	{{text}}
+	<div class="liste">
+		<ion-list>
+			<ion-item>
+				<ion-icon name="home"></ion-icon> Adresse : 25 rue de l'église 71260 Lugny
+			</ion-item>
+			<ion-item>
+				<ion-icon name="phone-portrait"></ion-icon> Tel : 06.23.29.84.10
+			</ion-item>	
+			<ion-item>
+				<ion-icon name="logo-github"></ion-icon> GitHub : https://github.com/alexpaco
+			</ion-item>
+			<ion-item>
+				<ion-icon name="logo-linkedin"></ion-icon> LinkedIn : alexandre pacoret
+			</ion-item>
+		</ion-list>
+	</div>
+</ion-content>

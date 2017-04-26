@@ -1,0 +1,19 @@
+<ion-header>
+	<ion-navbar color='navbleu'>
+		<ion-title text-center>{{ selectionProjet.Nom }}</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content class="body">
+<ion-grid>
+	<ion-row>
+		<ion-col width-100>
+		    <img [src]="selectionProjet.Image">
+		    <p text-center><span style="text-decoration: underline;">Langages utilisés</span> : <span [innerHTML]="selectionProjet.Langages"></span></p>
+		    <p text-center><span style="text-decoration: underline;">Description</span> : </p>
+		    <p [innerHTML]="selectionProjet.description" text-center></p>
+		    <a [href]="selectionProjet.url_site" target="_blank" color="navbleu"><p text-center>En cliquant ici vous accederez au projet.</p></a>
+	    </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>

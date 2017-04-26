@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color='navbleu'>
+    <ion-title text-center>Projets fait en formation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding body">
+	<article>
+			<div *ngFor="let projet of projets" (click)="projetChoisi($event, projet)">
+				<div class='projet'>
+					<img [src]="projet.Image">
+					<h4 [innerHTML]="projet.Nom" text-center></h4>
+				</div>  
+			</div>
+		</article>  
+</ion-content>
